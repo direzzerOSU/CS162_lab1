@@ -1,4 +1,5 @@
 /******************************
+** Program Name: Lab 1
 ** Author: Ryan DiRezze
 ** Date: September 30, 2018
 ** Description: Header file for the readMatrix function and its implementation file, including
@@ -8,14 +9,8 @@
 #ifndef READMATRIX_H
 #define READMATRIX_H
 
-// class Matrix{
-// private:
-//    int size;
-//    int* array;
-// public:
-//    Matrix(int dimensions){
-//       size = dimensions;
-//       array = new int[size*size];
-//    }
-// };
+// function prototypes
+void readMatrix(int** matrix, int size);
+void printMatrix(int** matrix, int size);
+
 #endif

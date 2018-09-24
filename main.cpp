@@ -1,4 +1,5 @@
 /******************************
+** Program Name: Lab 1
 ** Author: Ryan DiRezze
 ** Date: September 30, 2018
 ** Description: Collects and aggregates all source files, which define/implement the
@@ -9,14 +10,23 @@
          validation).
       (2) Asks the user to input the matrix's integer values, beginning from the top-left
          corner and moves to the right for each row. Once the row's values are input by
-         the user, the program moves to the row immediately below the previous row. 
+         the user, the program moves to the row immediately below the previous row.
 ******************************/
 
 // include source file(s) for functions & implementations
 #include "readMatrix.hpp"
-#include "readMatrix.cpp"
 #include "determinant.hpp"
-#include "determinant.cpp"
+
+#include<iostream>
+#include<string>
+using std::cout;
+using std::endl;
+using std::cin;
+
+// function prototypes
+void readMatrix(int** matrix, int size);
+void printMatrix(int** matrix, int size);
+int determinant(int** matrix, int size);
 
 int main(){
    // adds a blank line before program content for formatting/aesthetics
@@ -49,8 +59,8 @@ int main(){
    }
 
    readMatrix(matrix, size);
-   printMatrix(matrix, size);
-   cout << endl << "determinant: " << determinant(matrix, size) << endl;
+   // printMatrix(matrix, size);
+   cout << endl << "determinant: " << determinant(matrix, size) << endl << endl;
 
    // free the dynamically allocated memory
    for(int r=0; r<size; r++){

@@ -1,4 +1,5 @@
 /******************************
+** Program Name: Lab 1
 ** Author: Ryan DiRezze
 ** Date: September 30, 2018
 ** Description: Defines/Implements two functions that:
@@ -29,10 +30,6 @@ using std::cin;
 
 // TODO: Input Validation function(s)
 // TODO: Build makefile
-
-// function prototypes
-void readMatrix(int** matrix, int size);
-void printMatrix(int** matrix, int size);
 
 // based on the 'size' function parameter, this function requests user input for
 // each value/position within the corresponding matrix (2x2/3x3 based on 'size'),

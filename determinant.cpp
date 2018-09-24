@@ -1,4 +1,5 @@
 /******************************
+** Program Name: Lab 1
 ** Author: Ryan DiRezze
 ** Date: September 30, 2018
 ** Description: Defines/Implements the "determinant" function, which is calculated based on
@@ -11,9 +12,6 @@
 
 // this implementation file's corresponding header file
 #include "determinant.hpp"
-
-// function prototypes
-int determinant(int** matrix, int size);
 
 // calculates the determinant of the matrix that is passed as a parameter
 // of the function (indirectly through pointers)
