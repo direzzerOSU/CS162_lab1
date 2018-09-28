@@ -18,15 +18,10 @@
 #include "determinant.hpp"
 
 #include<iostream>
-#include<string>
 using std::cout;
 using std::endl;
 using std::cin;
-
-// function prototypes
-void readMatrix(int** matrix, int size);
-void printMatrix(int** matrix, int size);
-int determinant(int** matrix, int size);
+#include<string>
 
 int main(){
    // adds a blank line before program content for formatting/aesthetics
@@ -46,7 +41,7 @@ int main(){
          dim = 3;
       }
       else{
-         cout << "Uh oh! That's not a valid option... Please try again." << endl;
+         cout << endl << "Uh oh! That's not a valid option... Please try again." << endl << endl;
       }
    } while(tolower(selection) != 'a' && tolower(selection) != 'b');
 

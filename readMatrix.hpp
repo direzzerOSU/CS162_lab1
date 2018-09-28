@@ -12,5 +12,6 @@
 // function prototypes
 void readMatrix(int** matrix, int size);
 void printMatrix(int** matrix, int size);
+bool isInteger();
 
 #endif

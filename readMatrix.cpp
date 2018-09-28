@@ -29,7 +29,12 @@ using std::endl;
 using std::cin;
 
 // TODO: Input Validation function(s)
-// TODO: Build makefile
+
+// function prototypes
+void readMatrix(int**, int);
+bool isInteger(int);
+void printMatrix(int**, int);
+
 
 // based on the 'size' function parameter, this function requests user input for
 // each value/position within the corresponding matrix (2x2/3x3 based on 'size'),
@@ -38,11 +43,44 @@ void readMatrix(int** matrix, int size){
    cout << endl << "Please enter all integers within the matrix, beginning\nfrom top to bottom and left to right:" << endl << endl;
    for(int r=0; r<size; r++){
       for(int c=0; c<size; c++){
-         cout << "Value at matrix[" << r << "][" << c << "]: ";
+         cout << "matrix[" << r << "][" << c << "]: ";
          cin >> matrix[r][c];
+
+         // input validation
+         // int integer;
+         // cin >> integer;
+         // if(cin.fail()){
+         //    cin.clear();
+         //    cout << "Please try again..." << endl;
+         //    cin >> integer;
+         // }
+         // else{
+         //    integer = matrix[r][c];
+         // }
+         // break;
       }
    }
 }
+
+// // input validation for an integer
+// // bool isInteger(int value){
+// bool isInteger(int value){
+//    // int value;
+//    bool valid = true;
+//    if(cin.fail()){
+//       valid = false;
+//       cout << endl << "Uh oh! That value is not a valid integer. Please try again..." << endl;
+//    }
+//    // do{
+//    //    cin >> value;
+//    //    if(cin.fail()){
+//    //       valid = false;
+//    //       cout << endl << "Uh oh! That value isn't a valid integer. Please try again..." << endl;
+//    //       cin.clear();
+//    //    }
+//    // } while(!valid);
+//    return valid;
+// }
 
 // prints the matrix that is indirectly passed (via pointers) as a function parameter
 void printMatrix(int** matrix, int size){
